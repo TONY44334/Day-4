@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "Impact-r";
+    src: url('impact.ttf');
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2{
+    margin-right: 5%;
+    font-weight: 100;
+}
+#ac{
+    color: rgb(255, 132, 132);
+    text-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.57 );
+    font-size: 1.7rem;
+}
+#pls{
+    color: rgb(170, 255, 42);
+    font-size: 1.9rem;
+}
+body{
+    height: 100vh;
+    width: auto;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    background-image: linear-gradient(180deg, rgb(49, 201, 221),rgb(36, 110, 160));
+    font-family: Impact-r;
+    color: aliceblue;
+}
+.container{
+    height: 450px;
+    width: 300px;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.57 );
+    backdrop-filter: blur( 4px );
+   -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+#text-area{
+   height: 75px;
+   width: auto;
+   text-align: end;
+   display: flex;
+   justify-content: end;
+   align-items: center;
+}
+#text-area span{
+    margin: 2%;
+
+ }
+.container .buttons{
+    position: relative;
+    display: grid;
+    grid-template-columns: 75px 75px 75px 75px;
+    grid-template-rows: 75px 75px 75px 75px 75px;
+
+}   
+.buttons span{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: context-menu;
+}
+.buttons span:active{
+    
+    top: 4%;
+    background: rgb(255, 254, 254 ,0.25);
+}
+
